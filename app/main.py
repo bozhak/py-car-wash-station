@@ -19,8 +19,8 @@ class CarWashStation:
     ) -> None:
         self.distance_from_city_center = distance_from_city_center
         self.clean_power = clean_power
-        self.average_rating = round(average_rating, 1)  # ✅ саме тут треба округлити
-        self.count_of_ratings = count_of_ratings        # без округлення, бо це ціле число
+        self.average_rating = round(average_rating, 1)
+        self.count_of_ratings = count_of_ratings
 
     def serve_cars(self, cars: list[Car]) -> float:
         income = 0
